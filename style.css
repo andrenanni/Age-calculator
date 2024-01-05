@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400;1,800&display=swap');
 
 *{
     padding: 0;
@@ -32,17 +32,14 @@ main{
 
 .info-data{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    background-color: crimson;
-}
-
-.box-input{
-    
+    gap: 25px;
+    height: 115px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
 }
 
 .label-txt{
+    display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: hsl(0, 1%, 44%);
@@ -56,11 +53,20 @@ main{
     border-radius: 7px;
     height: 55px;
     width: 125px;
-    border: 1px solid hsl(259, 100%, 65%);
+    border: 1px solid hsl(0, 0%, 86%);
     font-size: 18pt;
     padding: 15px;
+    margin-top: 5px;
     caret-color: hsl(259, 100%, 65%);
     cursor: pointer;
+}
+
+.box-txt:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+.box-txt:hover{
+    border: 1px solid hsl(259, 100%, 65%);
 }
 
 input:focus{
@@ -68,13 +74,25 @@ input:focus{
 }
 
 
-/* .data-result{
-    background-color: blue;
-    height: 70%;
+.data-result{
+    margin-top: 30px;
     width: 80%;
 }
 
-.button{
-    
+.data>div{
+    display: flex;
+    gap: 10px;
 }
-*/
+
+.data{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 62pt;
+    line-height: 1.1;
+    cursor: default;
+}
+
+.number{
+    color: hsl(259, 100%, 65%);
+}
