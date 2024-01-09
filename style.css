@@ -96,3 +96,44 @@ input:focus{
 .number{
     color: hsl(259, 100%, 65%);
 }
+
+.box-button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(259, 100%, 65%);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: black;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgb(222, 222, 222);
+    width: 100%;
+    color: rgb(79, 79, 79);
+    text-align: center;
+    font-size: 8pt;
+    padding: 5px;
+}
+
+footer a{
+    color:hsl(259, 100%, 65%);
+}
