@@ -10,35 +10,33 @@
     <main>
         <div class="calculator">
             <div class="info-data">
-                    <label class="label-txt" for="textDay">DIA
-                    <input type="text" name="textDay" id="textDay" class="box-txt">
+                    <label class="label-txt" for="Day">DIA
+                    <input type="text" name="Day" id="Day" class="box-txt">
                     </label>
 
-                    <label class="label-txt" for="textMonth">MÊS
-                    <input type="text" name="textDay" id="textMonth" class="box-txt">
+                    <label class="label-txt" for="Month">MÊS
+                    <input type="text" name="Month" id="Month" class="box-txt" value="" onclick="">
                     </label>
 
-                    <label class="label-txt" for="textYear">ANO
-                    <input type="text" name="textDay" id="textYear" class="box-txt">
+                    <label class="label-txt" for="Year">ANO
+                    <input type="text" name="Year" id="Year" class="box-txt" value="" onclick="">
                     </label>
                     <div class="box-button">
-                        <div class="button">
-                            <img class="seta" src="img/icon-arrow.svg">
-                        </div>
+                        <button class="button" type="button" onclick="CalcularInput"><img src="img/icon-arrow.svg"></button>
                     </div>
             </div>
             <div class="data-result">
                 <div class="data">
                     <div>
-                        <p class="number">25</p>
+                        <p class="number" id="resultYear"></p>
                         <p class="text">anos</p>
                     </div>
                     <div>
-                        <p class="number">3</p>
+                        <p class="number" id="resultMonth"></p>
                         <p class="text">meses</p>
                     </div>
                     <div>
-                        <p class="number">26</p>
+                        <p class="number" id="resultDay"></p>
                         <p class="text">dias</p>
                     </div>
                 </div>
@@ -48,5 +46,6 @@
     <footer>
         <p>Coded by <a href="https://www.linkedin.com/in/andnanni" target="_blank">André Nanni</a> - 2023
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
