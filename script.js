@@ -1,10 +1,22 @@
-var day = Number(8);
-var month = Number(5);
-var year = Number(1998);
+function CalInput(){
+    var day = document.getElementById('Day').value;
+    var num = Number(day);
+    var result = document.getElementById('resultYear');
+    var info = document.getElementById('infoDay');
 
-var teste = document.getElementById('resultYear');
+    info.innerHTML = null;
 
-var anos = 2024-year;
-
-teste.innerHTML = anos;
-
+    if (num == false){
+        info.innerHTML = "Campo obrigatório";
+        result.innerHTML = "--";
+        return;
+    }
+    else if (num > 31){
+        info.innerHTML = "Dia inválido";
+        result.innerHTML = "--";
+        return;
+    }
+    else{
+        result.innerHTML = num;
+    }
+}

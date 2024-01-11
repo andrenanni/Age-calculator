@@ -11,32 +11,36 @@
         <div class="calculator">
             <div class="info-data">
                     <label class="label-txt" for="Day">DIA
-                    <input type="text" name="Day" id="Day" class="box-txt">
+                    <input type="text" name="Day" id="Day" placeholder="DD" class="box-txt">
+                    <p class="infoJS" id="infoDay"></p>
                     </label>
 
                     <label class="label-txt" for="Month">MÊS
-                    <input type="text" name="Month" id="Month" class="box-txt" value="" onclick="">
+                    <input type="text" name="Month" id="Month" placeholder="MM" class="box-txt">
+                    <p class="infoJS" id="infoMonth"></p>
                     </label>
 
                     <label class="label-txt" for="Year">ANO
-                    <input type="text" name="Year" id="Year" class="box-txt" value="" onclick="">
+                    <input type="text" name="Year" id="Year" placeholder="AAAA" class="box-txt">
+                    <p class="infoJS" id="infoYear"></p>
                     </label>
+
                     <div class="box-button">
-                        <button class="button" type="button" onclick="CalcularInput"><img src="img/icon-arrow.svg"></button>
+                        <button class="button" type="button" onclick="CalInput()"><img src="img/icon-arrow.svg"></button>
                     </div>
             </div>
             <div class="data-result">
                 <div class="data">
                     <div>
-                        <p class="number" id="resultYear"></p>
+                        <p class="number" id="resultYear">--</p>
                         <p class="text">anos</p>
                     </div>
                     <div>
-                        <p class="number" id="resultMonth"></p>
+                        <p class="number" id="resultMonth">--</p>
                         <p class="text">meses</p>
                     </div>
                     <div>
-                        <p class="number" id="resultDay"></p>
+                        <p class="number" id="resultDay">--</p>
                         <p class="text">dias</p>
                     </div>
                 </div>
